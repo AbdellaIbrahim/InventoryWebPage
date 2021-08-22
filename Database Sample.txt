@@ -1,0 +1,9 @@
+Item Number : 
+Item Name : 
+Price : 
+Quantity : 
+Latest Shipment : 
+Next Shipment : 
+Quantity Sold last 6 months : 
+Item Origin : 
+ 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Inventory Manager</title>
+        <link rel="stylesheet" type="text/css" href="newIndexCSS.css" title="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+      <div id="wrapper">
+        <h1>Inventory Manager</h1>
+        <div id="loginDiv">
+            
+            <div id="innerLoginDiv">
+                <span class="inputlabel"><label>Username : </label><br></span>
+                <input type="text" name="" id="usernameLogin" required="" class="inputLogin"><br>
+
+                <span class="inputlabel"><label>Password : </label><br></span>
+                <input type="password" name="" id="passwordLogin" required="" class="inputLogin"><br>
+
+                <button onclick="login();">Login</button>
+                <button onclick="signupAction('show')">Signup</button>
+
+            </div>
+        </div>
+      </div>
+
+
+
+        <!-- Signup Page modal-->
+        <div id="signupDiv">
+            <h2>Signup</h2>
+            <form>
+              <div class="user-box">
+                <input type="text" name="" required="" id="username">
+                <label>Username</label>
+              </div>
+              <div class="user-box">
+                <input type="text" name="" required="" id="fName">
+                <label>First Name</label>
+              </div>
+              <div class="user-box">
+                <input type="text" name="" required="" id="lName">
+                <label>Last name</label>
+              </div>
+              <div class="user-box">
+                <input type="password" name="" required="" id="pswd">
+                <label>Passoword</label>
+              </div>
+              <div class="user-box">
+                <input type="password" name="" required="" id="pswd1">
+                <label>Re-type Password</label>
+              </div>
+
+              <a href="#" onclick="newUser(), signupAction('hide')">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+              </a>
+            </form>
+        </div>
+
+    </body>
+</html> 

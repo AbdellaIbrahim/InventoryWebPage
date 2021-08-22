@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Inventory Manager</title>
+    <link rel="stylesheet" type="text/css" href="index.css" title="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head> 
+<!-- This is the main page. Access inventory and sign up for an account.-->
+    <body>
+        <h1> Welcome to Inventory Manager</h1>
+        <!-- <div id="main-content">
+            <div id="loginPage">
+                <h1>Welcome to Inventory Manager.</h1>
+
+                <label>Username : </label>
+                <input type="text" id="usernameLogin" value=""><br><br>
+                
+                <label>Passowrd : </label>
+                <input type="password" id="passwordLogin"><br><br>
+                <button onclick="login();">Login</button> <br><br>
+
+                <button onclick="signupAction('show');">Sign up</button>
+            </div> -->
+
+            <!--Sign up window.-->
+            <div id="createNewUser">
+
+                <!--Signup page Content-->
+                <div id="newUserFirstPage">
+                    <h2>Create a new user.</h2>
+                    <p id="signupPage-Content">
+                        <span class="close" onclick="signupAction('hide');">&times;</span>
+                        <label >Username : </label><br>
+                        <input type="text" class="inputBox" id="username"><br><br>
+
+                        <label name="passoword">First name : </label><br>
+                        <input type="text" class="inputBox" id="fName"><br><br>
+
+                        <label>Last name : </label><br>
+                        <input type="text" class="inputBox" id="lName"><br><br>
+
+                        <label>E-mail : </label><br>
+                        <input type="email" class="inputBox" id="email"><br><br>
+
+                        <label>Password : </label><br>
+                        <input type="password" class="inputBox" id="pswd"><br><br>
+
+                        <labe>Re-type passowrd : </label><br>
+                        <input type="password" class="inputBox"><br><br>
+                        
+                        <label>Sign up Token : </label><br>
+                        <input type="text" class="inputBox"><button id="tokeninformation" onclick="tokenInformation()">?</button></span><br><br>
+
+                        <!-- Here should run a function that will verify all the information above. If valid move on to next step.-->
+                        <button onclick="newUser(), signupAction('hide')">Submit</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="createNewUser" id="sign_up">
+            <h2>Signup</h2>
+            <form>
+              <div class="user-box">
+                <input type="text" name="" required="">
+                <label>Username</label>
+              </div>
+              <div class="user-box">
+                <input type="password" name="" required="">
+                <label>Password</label>
+              </div>
+              <div class="user-box">
+                <input type="text" name="" required="">
+                <label>First Name</label>
+              </div>
+              <div class="user-box">
+                <input type="text" name="" required="">
+                <label>Last name</label>
+              </div>
+              <div class="user-box">
+                <input type="password" name="" required="">
+                <label>Passoword</label>
+              </div>
+              <div class="user-box">
+                <input type="password" name="" required="">
+                <label>Re-type Password</label>
+              </div>
+
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+              </a>
+            </form>
+          </div>
+
+
+        <div class="form-style-8">
+            <h2>Login to your account</h2>
+            <form>
+              <input type="text" name="field1" placeholder="Username" id="usernameLogin" />
+              <input type="password" name="field2" placeholder="Password" id="passwordLogin" />
+              <input type="button" value="Login" onclick="login()" />
+              <input type="button" value="Signup" onclick="signupAction('show');" />
+            </form>
+          </div>
+
+    </body>
+
+</html>
