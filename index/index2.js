@@ -553,7 +553,7 @@ function addItem(){
     var itemLatestShipment = document.getElementById("latestShipment").value;
     var itemNextShipment = document.getElementById("nextShipment").value;
     var itemOrigin = document.getElementById("itemOrigin").value;
-    // Check if any of required feilds are empty.
+    // Check if any of required fields are empty.
     if(itemName.length == 0){
         alert("Please fill in all required fields");
     }else{
@@ -575,7 +575,7 @@ function addItem(){
                     var newDiv = document.createElement("div");
                     var span = document.createElement("span");
                     $(newDiv).attr("class","alert");
-                    $(newDiv).append("Item Successfully Deleted.");
+                    $(newDiv).append("Item Successfully Inserted.");
                     $("#insertItem").append(newDiv);
 
                     $(span).attr("class","closebtn");
