@@ -1,3 +1,14 @@
+
+/*
+The strategy used in designing this website is as follows
+1. jQuery is used to load webpages, hence hiding most HTML codes.
+2. Requests are sent to a running server loaded up in JSON objects.
+    Each JSON object contains an actionType : ActionType operations
+        Any required data are also loaded with the in the same JSON object sent to the server
+3. Server receives an action and does its operations in the server.
+ */
+
+
 // Setting up express.
 const express = require('express');
 const { response, query } = require('express');
