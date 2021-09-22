@@ -7,7 +7,7 @@ This is a simple web-application used to handle basic inventory management opera
 
 To use, make sure you have Nodejs installed and follow these instructions.
 
-    Navigate to the directory where the project is stored.
+    Navigate to the directory where the project is located.
     Open a CLI such as Terminal.
     Run "npm init" and follow the instructions.
     Run "npm install express".
